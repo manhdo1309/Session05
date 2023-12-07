@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int sale;
+	printf("Nhap vao doanh thu cua dai ly: ");
+	scanf("%d", &sale);
+	float bonus;
+	if(sale <= 100000000)
+	{
+		bonus = sale * 5 / 100;
+		printf("Hoa hong cua dai ly = %.2f VND", bonus);
+	}
+	else if(100000000 < sale <= 300000000)
+	{
+		bonus = sale * 10 / 100;
+		printf("Hoa hong cua dai ly = %.2f VND", bonus);
+	}
+	else if(sale > 300000000)
+	{
+		bonus = sale * 20 / 100;
+		printf("Hoa hong cua dai ly = %.2f VND", bonus);
+	}
+	
+	return 0;
+}
