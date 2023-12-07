@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int incomeBT;
+	printf("Nhap vao thu nhap truoc thue: ");
+	scanf("%d", &incomeBT);
+	int incomeAT;
+	if(incomeBT <= 5000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 5 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	else if(5000000 < incomeBT <= 10000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 10 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	else if(10000000 < incomeBT <= 18000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 15 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	else if(18000000 < incomeBT <= 32000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 20 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	else if(32000000 < incomeBT <= 52000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 25 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	else if(52000000 < incomeBT <= 80000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 30 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	else if(incomeBT > 80000000)
+	{
+		incomeAT = incomeBT - (incomeBT * 35 / 100);
+		printf("Thu nhap sau thue cua ban: %d", incomeAT);
+	}
+	return 0;
+}
