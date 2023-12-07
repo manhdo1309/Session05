@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int minutes;
+	printf("Nhap vao so phut su dung trong thang: ");
+	scanf("%d", &minutes);
+	int monthly = 25000;
+	int totalFee;
+	if(minutes <= 50)
+	{
+		totalFee = 25000 + (minutes * 600);
+		printf("Phi cuoc dien thoai cua ban: %d VND", totalFee);
+	}
+	else if(50 < minutes <= 200)
+	{
+		totalFee = 25000 + (50 * 600) + (minutes - 50) * 400;
+		printf("Phi cuoc dien thoai cua ban: %d VND", totalFee);
+	}
+	else if(200 < minutes <= 400)
+	{
+		totalFee = 25000 + (50 * 600) + (150 * 400) + (minutes - 200) * 200;
+		printf("Phi cuoc dien thoai cua ban: %d VND", totalFee);
+	}	
+	else if(minutes > 400)
+	{
+		totalFee = 25000 + (50 * 600) + (150 * 400) + (200 * 200) + (minutes - 400) * 100;
+		printf("Phi cuoc dien thoai cua ban: %d VND", totalFee);
+	}
+	
+	return 0;
+}
