@@ -1,0 +1,104 @@
+#include <stdio.h>
+int main(){
+	int dayBirth;
+	int monthBirth;
+	printf("Nhap vao ngay sinh va thang sinh cua ban: ");
+	scanf("%d %d", &dayBirth, &monthBirth);
+	if(21 <= dayBirth <= 31 && monthBirth == 3)
+	{
+		printf("Ban la cung Bach Duong");
+	}
+	else if(1 <= dayBirth <= 20 && monthBirth == 4)
+	{
+		printf("Ban la cung Bach Duong");
+	}
+	else if(21 <= dayBirth <= 30 && monthBirth == 4)
+	{
+		printf("Ban la cung Kim Ngu");
+	}
+	else if(1 <= dayBirth <= 20 && monthBirth == 5)
+	{
+		printf("Ban la cung Kim Ngu");
+	}
+	else if(21 <= dayBirth <= 31 && monthBirth == 5)
+	{
+		printf("Ban la cung Song Tu");
+	}
+	else if(1 <= dayBirth <= 21 && monthBirth == 6)
+	{
+		printf("Ban la cung Song Tu");
+	}
+	else if(22 <= dayBirth <= 30 && monthBirth == 6)
+	{
+		printf("Ban la cung Cu Giai");
+	}
+	else if(1 <= dayBirth <= 22 && monthBirth == 7)
+	{
+		printf("Ban la cung Cu Giai");
+	}
+	else if(23 <= dayBirth <= 31 && monthBirth == 7)
+	{
+		printf("Ban la cung Su Tu");
+	}
+	else if(1 <= dayBirth <= 22 && monthBirth == 8)
+	{
+		printf("Ban la cung Su Tu");
+	}
+	else if(23 <= dayBirth <= 31 && monthBirth == 8)
+	{
+		printf("Ban la cung Xu Nu");
+	}
+	else if(1 <= dayBirth <= 22 && monthBirth == 9)
+	{
+		printf("Ban la cung Xu Nu");
+	}
+	else if(23 <= dayBirth <= 30 && monthBirth == 9)
+	{
+		printf("Ban la cung Thien Binh");
+	}
+	else if(1 <= dayBirth <= 23 && monthBirth == 10)
+	{
+		printf("Ban la cung Thien Binh");
+	}
+	else if(24 <= dayBirth <= 31 && monthBirth == 10)
+	{
+		printf("Ban la cung Bo Cap");
+	}
+	else if(1 <= dayBirth <= 22 && monthBirth == 11)
+	{
+		printf("Ban la cung Bo Cap");
+	}
+	else if(23 <= dayBirth <= 30 && monthBirth == 11)
+	{
+		printf("Ban la cung Nhan Ma");
+	}
+	else if(1 <= dayBirth <= 21 && monthBirth == 12)
+	{
+		printf("Ban la cung Nhan Ma");
+	}
+	else if(22 <= dayBirth <= 31 && monthBirth == 12)
+	{
+		printf("Ban la cung Ma Ket");
+	}
+	else if(1 <= dayBirth <= 19 && monthBirth == 1)
+	{
+		printf("Ban la cung Ma Ket");
+	}
+	else if(20 <= dayBirth <= 31 && monthBirth == 1)
+	{
+		printf("Ban la cung Bao Binh");
+	}
+	else if(1 <= dayBirth <= 18 && monthBirth == 2)
+	{
+		printf("Ban la cung Bao Binh");
+	}
+	else if(19 <= dayBirth <= 29 && monthBirth == 2)
+	{
+		printf("Ban la cung Song Ngu");
+	}
+	else if(1 <= dayBirth <= 20 && monthBirth == 3)
+	{
+		printf("Ban la cung Song Ngu");
+	}
+	return 0;
+}
